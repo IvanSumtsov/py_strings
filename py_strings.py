@@ -12,8 +12,7 @@ def reverse(text: str) -> str:
     str
         The text written backwards.
     """
-    pass
-
+    return text[::-1]
 
 def first_to_upper(text: str) -> str:
     """
@@ -29,7 +28,7 @@ def first_to_upper(text: str) -> str:
     str
         The modified text
     """
-    pass
+    
 
 
 def count_vowels(text: str) -> int:
@@ -46,7 +45,13 @@ def count_vowels(text: str) -> int:
     inp
         Number of vowels.
     """
-    pass
+    vowels = ['a','A','e','E','i','I','o','O','u','U','y','Y']
+    total = 0
+    for s in text:
+        if s in vowels:
+            total += 1
+
+    return total 
 
 
 def sum_digits(text: str) -> int:
