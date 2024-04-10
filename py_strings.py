@@ -1,73 +1,36 @@
 def reverse(text: str) -> str:
-    """
-    Return the 'text' backwards.
-
-    Parameters
-    ----------
-    text: str
-        The input string
-
-    Returns
-    -------
-    str
-        The text written backwards.
-    """
+    
     return text[::-1]
+    pass
 
 def first_to_upper(text: str) -> str:
-    """
-    Changes each first character of the word to uppercase.
-
-    Parameters
-    ----------
-    text: str
-        The input string
-
-    Returns
-    -------
-    str
-        The modified text
-    """
-    
-
+    L=text.split()
+    M=[]
+    for i in L:
+        M.append(i[0].capitalize()+i[1:])
+    r =" ".join(M)
+    return r
+    pass
 
 def count_vowels(text: str) -> int:
-    """
-    Counts number of vovels in the text.
 
-    Parameters
-    ----------
-    text: str
-        The input string
-
-    Returns
-    -------
-    inp
-        Number of vowels.
-    """
     vowels = ['a','A','e','E','i','I','o','O','u','U','y','Y']
     total = 0
     for s in text:
         if s in vowels:
             total += 1
 
-    return total 
+    return total
+    pass
 
 
 def sum_digits(text: str) -> int:
-    """
-    Finds all digitts in the text and returns its sum.
-
-    Parameters
-    ----------
-    text: str
-        The input string
-
-    Returns
-    -------
-    int
-        Sum of all digits in the text.
-    """
+    L=list(text)
+    c=0
+    for i in L:
+        if(i=="9" or i=="8" or i=="7" or i=="6" or i=="5" or i=="4" or i=="3" or i=="2" or i=="1" or i=="0"):
+             c+=int(i)
+    return c
     pass
 
 
