@@ -38,7 +38,7 @@ def search_substr(text: str, sub: str) -> int:
     """
     Search for sub(string) in the text. Returns the position or None.
 
-    Parameters
+    Parametrs
     ----------
     text: str
         The input string
