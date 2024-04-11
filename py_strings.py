@@ -47,5 +47,5 @@ def search_substr(text: str, sub: str) -> int:
     -------
     int or None
         Position of the sub(string) or None.
-    ""
+    """
     pass
